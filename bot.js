@@ -7,6 +7,7 @@ bot.on('text', async ctx => {
     if (ctx.message.chat.type === 'private') {
         const content = ctx.message.chat.text
         const userId = ctx.message.from.id
+        console.log(userId)
         const userId2 = 5748601508
         const chatId = 6443812256
         bot.telegram.getChatMember(chatId, userId).then((chatMember) => {
