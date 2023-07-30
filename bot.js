@@ -7,7 +7,7 @@ bot.on('text', async ctx => {
     if (ctx.message.chat.type === 'private') {
         const content = ctx.message.chat.text
         const userId = ctx.message.from.id
-        const chatId = 6443812256
+        const chatId = -1921674447
         bot.telegram.getChatMembersCount(chatId).then((count) => {
             bot.telegram.getChatMember(chatId, userId).then((chatMember) => {
                 if (chatMember && chatMember.status === `member`){
